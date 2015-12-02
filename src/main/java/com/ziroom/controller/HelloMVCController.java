@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloMVCController {
 
 	@RequestMapping("/mvc")
+	//host:8080/hello/mvc
 	public String helloMVC(){
 		return "home";
 	}
