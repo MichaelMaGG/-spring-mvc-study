@@ -1,0 +1,5 @@
+CREATE DATABASE `ims`CHARACTER SET utf8 ;
+
+CREATE TABLE `ims`.`manager`
+( `id` FLOAT(20) NOT NULL AUTO_INCREMENT, `name` VARCHAR(50), `password` VARCHAR(50), PRIMARY KEY (`id`) ) 
+CHARSET=utf8; 
