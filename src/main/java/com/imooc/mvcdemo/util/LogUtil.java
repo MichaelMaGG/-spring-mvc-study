@@ -7,6 +7,7 @@ public enum LogUtil {
 
     INSTANCE;
     
+    @SuppressWarnings("rawtypes")
     public Logger getLog(Class clazz) {
         return Logger.getLogger(clazz);
     }
