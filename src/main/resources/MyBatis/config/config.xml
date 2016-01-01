@@ -15,10 +15,8 @@
     </environment>
   </environments>
   
-  <!--
   <mappers>
-    <mapper resource="org/mybatis/example/BlogMapper.xml"/>
+    <mapper resource="MyBatis/maps/User.xml"/>
   </mappers>
-   -->
   
 </configuration>
