@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
 	<div id="main">
 
 		<div class="newcontainer" id="course_intro">

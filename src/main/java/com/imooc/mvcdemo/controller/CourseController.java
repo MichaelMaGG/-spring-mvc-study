@@ -78,7 +78,7 @@ public class CourseController {
 	
 	@RequestMapping(value="/admin", method = RequestMethod.GET, params = "add")
 	public String createCourse(){
-		return "course_admin/edit";
+		return "cour  se_admin/edit";
 	}
 	
 	@RequestMapping(value="/save", method = RequestMethod.POST)

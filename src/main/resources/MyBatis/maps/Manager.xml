@@ -31,8 +31,8 @@
         <result column="timestamp" jdbcType="INTEGER" property="timeStamp"/>
     </resultMap>
     
-    <resultMap type="com.imooc.mvcdemo.model.Manager" id="countResult">
-        <result column="managers" jdbcType="INTEGER" property="users"/>
+    <resultMap type="INTEGER" id="countResult">
+        <result column="counts" jdbcType="INTEGER"/>
     </resultMap>
 
     <!-- 
@@ -53,10 +53,14 @@
         select id, name, password, phonenumber, timestamp from manager
     </select>
   
-    <select id="countUsers" parameterType="int">
-        select count(1) as users from manager
+    <select id="countUsers" parameterType="int" resultMap="countResult">
+        select count(1) as counts from manager
     </select>
-  
+    
+    <insert id="insertManager" useGeneratedKeys="true" keyProperty="id">
+      insert into manager (id, name, password, phonenumber, timestamp)
+      values (#{id}, #{name}, #{password}, #{phoneNumber}, #{timeStamp})
+    </insert>
   
     <!-- 
     <delete id="deleteOne" parameterType="int">
