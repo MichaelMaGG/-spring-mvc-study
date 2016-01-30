@@ -11,7 +11,6 @@ public class Section {
 	private String duration;
 	private String filePath;
 	
-	
 	public Integer getId() {
 		return id;
 	}

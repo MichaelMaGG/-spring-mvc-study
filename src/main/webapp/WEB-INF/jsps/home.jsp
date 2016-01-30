@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head>
@@ -286,11 +287,7 @@
 
 <div>
     <div>
-        <p>宋岩是大傻子</p>
-        <p>宋岩是大傻子</p>
-        <p>宋岩是大傻子</p>
-        <p>宋岩是大傻子</p>
-        <p>宋岩是大傻子</p>
+        <p>大傻子</p>
     </div>
 
     <hr class="divider">

@@ -21,18 +21,17 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="User">
+<mapper namespace="Manager">
 
-    <resultMap type="com.imooc.mvcdemo.model.User" id="UserResult">
+    <resultMap type="com.imooc.mvcdemo.model.Manager" id="ManagerResult">
         <id column="id" jdbcType="INTEGER" property="id"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
-        <result column="gender" jdbcType="INTEGER" property="gender"/>
-        <result column="age" jdbcType="INTEGER" property="age"/>
-        <result column="level" jdbcType="INTEGER" property="level"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="timestamp" jdbcType="INTEGER" property="timestamp"/>
     </resultMap>
     
-    <resultMap type="com.imooc.mvcdemo.model.User" id="countResult">
-        <result column="users" jdbcType="VARCHAR" property="users"/>
+    <resultMap type="com.imooc.mvcdemo.model.Manager" id="countResult">
+        <result column="managers" jdbcType="INTEGER" property="users"/>
     </resultMap>
 
     <!-- 
@@ -49,12 +48,12 @@
     </select>
      -->
   
-    <select id="queryUserList" parameterType="com.imooc.mvcdemo.model.User" resultMap="UserResult">
-        select id, name, gender, age, level from user
+    <select id="queryManageerList" parameterType="com.imooc.mvcdemo.model.Manager" resultMap="ManagerResult">
+        select id, name, password, timestamp from manager
     </select>
   
     <select id="countUsers" parameterType="int">
-        SELECT COUNT(1) as users FROM USER
+        select count(1) as users from manager
     </select>
   
   
