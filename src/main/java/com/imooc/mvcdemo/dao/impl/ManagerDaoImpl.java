@@ -40,7 +40,14 @@ public class ManagerDaoImpl implements BaseDao {
     
     public static void main(String[] args) {
         ManagerDaoImpl impl = new ManagerDaoImpl();
-        System.out.println(impl.getManagerInfo());
+        System.out.println(impl.getManagerInfo().size());
+        for(Manager mm : impl.getManagerInfo()) {
+            System.out.println(mm.getId());
+            System.out.println(mm.getName());
+            System.out.println(mm.getPassword());
+            System.out.println(mm.getPhoneNumber());
+            System.out.println(mm.getTimeStamp());
+        }
     }
     
     

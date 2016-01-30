@@ -27,7 +27,8 @@
         <id column="id" jdbcType="INTEGER" property="id"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="password" jdbcType="VARCHAR" property="password"/>
-        <result column="timestamp" jdbcType="INTEGER" property="timestamp"/>
+        <result column="phonenumber" jdbcType="VARCHAR" property="phoneNumber"/>        
+        <result column="timestamp" jdbcType="INTEGER" property="timeStamp"/>
     </resultMap>
     
     <resultMap type="com.imooc.mvcdemo.model.Manager" id="countResult">
@@ -48,8 +49,8 @@
     </select>
      -->
   
-    <select id="queryManageerList" parameterType="com.imooc.mvcdemo.model.Manager" resultMap="ManagerResult">
-        select id, name, password, timestamp from manager
+    <select id="queryManagerList" parameterType="com.imooc.mvcdemo.model.Manager" resultMap="ManagerResult">
+        select id, name, password, phonenumber, timestamp from manager
     </select>
   
     <select id="countUsers" parameterType="int">

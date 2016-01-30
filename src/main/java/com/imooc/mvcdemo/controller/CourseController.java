@@ -42,13 +42,11 @@ public class CourseController {
 	public void setCourseService(CourseService courseService) {
 		this.courseService = courseService;
 	}
-
 	
 	//本方法将处理 /courses/view?courseId=123 形式的URL
 	@RequestMapping(value="/view", method=RequestMethod.GET)
 	public String viewCourse(@RequestParam("courseId") Integer courseId,
 			Model model) {
-		
 		
 		log.debug("In viewCourse, courseId = {}", courseId);
 		Course course = courseService.getCoursebyId(courseId);
@@ -130,20 +128,15 @@ public class CourseController {
 		return "success";
 	}
 	
-	
-	
 	@RequestMapping(value="/{courseId}",method=RequestMethod.GET)
 	public @ResponseBody Course getCourseInJson(@PathVariable Integer courseId){
 		return  courseService.getCoursebyId(courseId);
 	}
-	
 	
 	@RequestMapping(value="/jsontype/{courseId}",method=RequestMethod.GET)
 	public  ResponseEntity<Course> getCourseInJson2(@PathVariable Integer courseId){
 		Course course =   courseService.getCoursebyId(courseId);		
 		return new ResponseEntity<Course>(course, HttpStatus.OK);
 	}
-	
-	
 	
 }

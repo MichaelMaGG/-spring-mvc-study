@@ -117,14 +117,11 @@
 	        <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#feature-tab" data-tab="tab-chrome">JAVA</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-firefox">PYTHON</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-safari">WEB</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-opera">DATABASE</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-ie">ORTHERS</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-itemInfo">运输信息</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-ownerInfo">车主信息</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-carInfo">车辆信息</a></li>
                     </ul>
                 </li>
-                <li><a href="#summary-container">简介</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
             </ul>
         </div>
@@ -174,93 +171,37 @@
 
     <!-- 特性 -->
     <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">Chrome</a></li>
-        <li><a href="#tab-firefox" role="tab" data-toggle="tab">Firefox</a></li>
-        <li><a href="#tab-safari" role="tab" data-toggle="tab">Safari</a></li>
-        <li><a href="#tab-opera" role="tab" data-toggle="tab">Opera</a></li>
-        <li><a href="#tab-ie" role="tab" data-toggle="tab">IE</a></li>
+        <li class="active"><a href="#tab-itemInfo" role="tab" data-toggle="tab">运输信息</a></li>
+        <li><a href="#tab-ownerInfo" role="tab" data-toggle="tab">车主信息</a></li>
+        <li><a href="#tab-carInfo" role="tab" data-toggle="tab">车辆信息</a></li>
     </ul>
 
     <div class="tab-content">
-        <div class="tab-pane active" id="tab-chrome">
+        <div class="tab-pane active" id="tab-itemInfo">
             <div class="row feature">
                 <div class="col-md-7">
-
-                    <h2 class="feature-heading">Google Chrome <span
-                            class="text-muted">使用最广的浏览器</span></h2>
-
-                    <p class="lead">Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。
-                        该浏览器是基于其他开源软件所撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="<%=request.getContextPath()%>/resources/imgs/chrome-logo.jpg"
-                         alt="Chrome">
+                    <h2 class="feature-heading">Google Chrome <span class="text-muted">使用最广的浏览器</span></h2>
+                    <p class="lead">运输信息</p>
                 </div>
             </div>
         </div>
-        <div class="tab-pane" id="tab-firefox">
+        <div class="tab-pane" id="tab-ownerInfo">
             <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="<%=request.getContextPath()%>/resources/imgs/firefox-logo.jpg"
-                         alt="Firefox">
-                </div>
                 <div class="col-md-7">
-
-                    <h2 class="feature-heading">Mozilla Firefox <span class="text-muted">美丽的狐狸</span>
-                    </h2>
-
-                    <p class="lead">Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器，
-                        使用Gecko引擎（非ie内核），支持多种操作系统如Windows、Mac和linux。</p>
+                    <h2 class="feature-heading">Mozilla Firefox <span class="text-muted">美丽的狐狸</span></h2>
+                    <p class="lead">车主信息</p>
                 </div>
             </div>
         </div>
-        <div class="tab-pane" id="tab-safari">
+        <div class="tab-pane" id="tab-carInfo">
             <div class="row feature">
                 <div class="col-md-7">
-
                     <h2 class="feature-heading">Safari <span class="text-muted">Mac用户首选</span></h2>
-
-                    <p class="lead">Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。
-                        Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与IPAD和iPod touch的指定浏览器。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="<%=request.getContextPath()%>/resources/imgs/safari-logo.jpg"
-                         alt="Safari">
+                    <p class="lead">车辆信息</p>
                 </div>
             </div>
         </div>
-        <div class="tab-pane" id="tab-opera">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="<%=request.getContextPath()%>/resources/imgs/opera-logo.jpg"
-                         alt="Opera">
-                </div>
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Opera <span class="text-muted">小众但易用</span>
-                    </h2>
-
-                    <p class="lead">Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。
-                        是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。.</p>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-ie">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">IE <span class="text-muted">你懂的</span></h2>
-
-                    <p class="lead">Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet
-                        Explorer(7，8，9，10版本)，
-                        简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="<%=request.getContextPath()%>/resources/imgs/ie-logo.jpg"
-                         alt="IE">
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <!-- 关于 -->
@@ -274,8 +215,7 @@
                     <h4 class="modal-title" id="modal-label">关于</h4>
                 </div>
                 <div class="modal-body">
-                    <p>慕课网隶属于北京慕课科技中心(有限合伙)，是一家从事互联网免费教学的网络教育公司。秉承“开拓、创新、公平、分享”的精神，
-                        将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站式互动在线教育品牌。</p>
+                    <p>这是简介内容</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -283,6 +223,7 @@
             </div>
         </div>
     </div>
+    
 </div>
 
 <div>
@@ -294,8 +235,7 @@
 
     <footer>
         <p class="pull-right"><a href="#top">回到顶部</a></p>
-
-        <p>&copy; 2014 慕课网 </p>
+        <p class="copyright">Copyright &copy; 2016 MichaelMaGG<br><a href="" rel="nofollow"></p>
     </footer>
 </div>
 

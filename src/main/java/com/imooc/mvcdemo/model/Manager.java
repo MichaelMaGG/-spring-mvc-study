@@ -6,6 +6,7 @@ public class Manager {
 
     private int id;
     private String name;
+    private String password;
     private String phoneNumber;
     private Timestamp timeStamp;
     
@@ -32,6 +33,12 @@ public class Manager {
     }
     public void setTimeStamp(Timestamp timeStamp) {
         this.timeStamp = timeStamp;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
     }
     
 }
