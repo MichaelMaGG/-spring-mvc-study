@@ -16,5 +16,10 @@ public class HelloMvcController {
     public String index() {
         return "success";
     }
+    
+    @RequestMapping("/smart")
+    public String smart() {
+        return "smart";
+    }
 
 }

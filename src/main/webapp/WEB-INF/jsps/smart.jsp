@@ -9,7 +9,7 @@
 </head>
 <body>
 <div align="center">
-<h1>success</h1>
+<h1>I am smart!</h1>
 </div>
 </body>
 </html>
